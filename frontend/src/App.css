@@ -1,0 +1,127 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.landingPageContainer nav .navList {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.landingContent {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 4.8rem;
+  padding-block: 4.8rem;
+  height: 70vh;
+  box-sizing: border-box;
+  align-items: center;
+}
+.landingContent .landingText {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 0.6;
+}
+
+.landingContent .landingText .button {
+  background: #D97500;
+  border: none;
+  width: fit-content;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2.4rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+}
+
+.landingContent > div:nth-child(2) img { /* Corrected the selector */
+  height: 80vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  text-align: center; 
+}
+/* 
+.meetContainer {
+  display: fles;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustrationImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} */
+
+
+.meetContainer {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap; /* So it adjusts nicely on small screens */
+}
+
+.leftPanel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustrationImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
