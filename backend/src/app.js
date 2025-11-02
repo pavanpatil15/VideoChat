@@ -7,19 +7,7 @@ import userRoutes from './routes/users.routes.js';
 
 const app = express();
 const server = createServer(app);
-// const io = connectToSocket(server);
-
-const io = new Server(server, {
-  cors: {
-    origin: [
-      "https://video-chat-dusky-psi.vercel.app", // ✅ your deployed frontend
-      "http://localhost:3000"                    // ✅ for local testing
-    ],
-    methods: ["GET", "POST"],
-    credentials: true
-  },
-});
-
+const io = connectToSocket(server);
 
 app.set("port", process.env.PORT || 8000);
 
