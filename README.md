@@ -3,7 +3,7 @@
 # LIVE DEMO
 
 # Frontend (Vercel): https://video-chat-dusky-psi.vercel.app
-# Backend (Render): https://videochat-5-mpqh.onrender.com
+# Backend (Render): https://videochat-5-mpqh.onrender.com/test
 
 A real-time **video conferencing app** built with **React**, **Socket.io**, and **WebRTC** — allowing users to create or join meetings easily, switch between webcams and OBS virtual camera, and experience high-quality peer-to-peer video calling.
 
